@@ -1,8 +1,12 @@
 import { PreviewSection } from "@/components/src/preview";
-import React from "react";
+import React, { Suspense } from "react";
 
 const page = () => {
-  return <PreviewSection />;
+
+  return 
+  <Suspense fallback={<div>Loading...</div>}>
+  <PreviewSection />
+  </Suspense>;
 };
 
 export default page;
