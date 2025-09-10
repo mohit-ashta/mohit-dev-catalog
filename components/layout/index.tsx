@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { FC, ReactNode } from "react";
 import { Header } from "../header";
 import { Footer } from "../footer";

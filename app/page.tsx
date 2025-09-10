@@ -26,6 +26,7 @@ type Item = {
   subtitle?: string;
   imageAlt: string;
   imageUrl: string;
+  link: string;
 };
 
 const ALL_CATEGORIES: Category[] = [
@@ -49,6 +50,7 @@ const ITEMS: Item[] = [
     category: "Hospital",
     imageAlt: "Hospital website mockup",
     imageUrl: "image9.webp",
+    link: "https://athera-v2.vercel.app/",
   },
   {
     id: "hosp-02",
@@ -57,6 +59,7 @@ const ITEMS: Item[] = [
     category: "Hospital",
     imageAlt: "Hospital website mockup",
     imageUrl: "image8.webp",
+    link: "#",
   },
   {
     id: "hosp-03",
@@ -65,6 +68,7 @@ const ITEMS: Item[] = [
     category: "Hospital",
     imageAlt: "Hospital website mockup",
     imageUrl: "image15.webp",
+    link: "https://docter-site.vercel.app/",
   },
   {
     id: "fin-04",
@@ -73,6 +77,7 @@ const ITEMS: Item[] = [
     category: "Finance",
     imageAlt: "Finance website mockup",
     imageUrl: "image12.webp",
+    link: "https://site-insurance-v2.vercel.app/",
   },
   {
     id: "mana-01",
@@ -81,6 +86,7 @@ const ITEMS: Item[] = [
     category: "Management",
     imageAlt: "Event booking website mockup",
     imageUrl: "image2.webp",
+    link: "https://event-manage-v2.vercel.app/",
   },
   {
     id: "car-01",
@@ -89,6 +95,7 @@ const ITEMS: Item[] = [
     category: "Car Service",
     imageAlt: "Car service website mockup",
     imageUrl: "image16.webp",
+    link: "https://car-hub-v2.vercel.app/",
   },
   {
     id: "car-03",
@@ -97,6 +104,7 @@ const ITEMS: Item[] = [
     category: "Car Service",
     imageAlt: "Car service website mockup",
     imageUrl: "image3.webp",
+    link: "https://car-service-v2.vercel.app/",
   },
   {
     id: "edu-01",
@@ -105,6 +113,7 @@ const ITEMS: Item[] = [
     category: "Education",
     imageAlt: "Education LMS website mockup",
     imageUrl: "image7.webp",
+    link: "https://edu-v2.vercel.app/",
   },
   {
     id: "food-01",
@@ -113,6 +122,7 @@ const ITEMS: Item[] = [
     category: "Food",
     imageAlt: "Restaurant ordering website mockup",
     imageUrl: "image11.webp",
+    link: "https://pizza-site-drab.vercel.app/",
   },
   {
     id: "food-02",
@@ -121,6 +131,7 @@ const ITEMS: Item[] = [
     category: "Food",
     imageAlt: "Restaurant ordering website mockup",
     imageUrl: "image17.webp",
+    link: "https://cafe-site-zeta.vercel.app/",
   },
   {
     id: "shop-01",
@@ -129,6 +140,7 @@ const ITEMS: Item[] = [
     category: "E-commerce",
     imageAlt: "E-commerce website mockup",
     imageUrl: "image14.webp",
+    link: "https://craft-v2.vercel.app/",
   },
   {
     id: "trav-02",
@@ -137,6 +149,7 @@ const ITEMS: Item[] = [
     category: "Travel",
     imageAlt: "Travel flights website mockup",
     imageUrl: "image18.webp",
+    link: "https://travel-v2-seven.vercel.app/",
   },
   {
     id: "home-02",
@@ -145,15 +158,17 @@ const ITEMS: Item[] = [
     category: "Real Estate",
     imageAlt: "realEstate site mockup",
     imageUrl: "image10.webp",
+    link: "https://home-build.vercel.app/",
   },
-  {
-    id: "e-com-02",
-    title: "GlamourGems",
-    subtitle: "luxury jwellery",
-    category: "E-commerce",
-    imageAlt: "E-commerce site mockup",
-    imageUrl: "image13.webp",
-  },
+  // {
+  //   id: "e-com-02",
+  //   title: "GlamourGems",
+  //   subtitle: "luxury jwellery",
+  //   category: "E-commerce",
+  //   imageAlt: "E-commerce site mockup",
+  //   imageUrl: "image13.webp",
+  //   link:"/"
+  // },
   {
     id: "e-com-03",
     title: "Admin Dashboard",
@@ -161,6 +176,7 @@ const ITEMS: Item[] = [
     category: "E-commerce",
     imageAlt: "E-commerce site mockup",
     imageUrl: "image5.webp",
+    link: "https://innovative-builds-5bjc.vercel.app/dashboard",
   },
   {
     id: "fash-02",
@@ -169,6 +185,7 @@ const ITEMS: Item[] = [
     category: "Fashion",
     imageAlt: "fashion site mockup",
     imageUrl: "image6.webp",
+    link: "https://fashion-v2.vercel.app/",
   },
   {
     id: "fash-03",
@@ -177,6 +194,7 @@ const ITEMS: Item[] = [
     category: "Fashion",
     imageAlt: "fashion site mockup",
     imageUrl: "image4.webp",
+    link: "https://barber-website-beryl.vercel.app/",
   },
 ];
 
@@ -237,6 +255,7 @@ export default function Page() {
                 subtitle={item.subtitle}
                 tag={item.category}
                 imageUrl={item.imageUrl}
+                link={item.link}
                 imageAlt={item.imageAlt}
               />
             ))}

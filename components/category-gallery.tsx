@@ -11,6 +11,7 @@ export type GalleryItem = {
   category: string
   imageUrl: string
   imageAlt: string
+  link: string
 }
 
 type Props = {
@@ -39,6 +40,7 @@ export function CategoryGallery({ categories, items, initial = "All" }: Props) {
             subtitle={item.subtitle}
             tag={item.category}
             imageUrl={item.imageUrl}
+            link={item.link}
             imageAlt={item.imageAlt}
           />
         ))}

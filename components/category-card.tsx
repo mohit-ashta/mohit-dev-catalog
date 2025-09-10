@@ -11,6 +11,7 @@ type Props = {
   tag: string;
   imageUrl: string;
   imageAlt: string;
+  link:string
 };
 
 export function CategoryCard({
@@ -18,6 +19,7 @@ export function CategoryCard({
   subtitle,
   tag,
   imageUrl,
+  link,
   imageAlt,
 }: Props) {
   return (
@@ -87,7 +89,7 @@ export function CategoryCard({
           ) : null}
         </div>
         <Link
-          href="#"
+          href={link}
           className="mt-1 inline-flex shrink-0 items-center rounded-md border border-emerald-700/50 bg-emerald-600/10 px-2 py-1 text-xs text-emerald-300 transition-colors hover:bg-emerald-600/20 focus:outline-none focus:ring-2 focus:ring-emerald-600"
           aria-label={`View ${title} details`}
         >
